@@ -11,6 +11,7 @@ public class OpenBrowser {
         WebDriverManager.chromedriver().setup();
        WebDriver driver=new ChromeDriver();
        driver.get("https://www.amazon.com");
+       System.out.println("---------------------------Opened browser---------------------------");
        driver.manage().window().maximize();
        driver.quit();
     }
